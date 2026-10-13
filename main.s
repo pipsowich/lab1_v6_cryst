@@ -59,7 +59,6 @@ end_inner:
     addi s0, s0, 1
     j outer_loop
 end_outer:
-    # Возврат результата в a0 (ABI)
     mv a0, s2
 
     lw s0, 0(sp)
