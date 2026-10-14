@@ -2,7 +2,6 @@
     matrix: .word 10, 22, 33, 4, 52, 64, 17, 8, 91, 10, 111, 3, 1, 14, 52, 31
     N: .word 4
     M: .word 4
-    result_msg: .asciiz "Сумма элементов массива: "
 
 .text
 .globl main
