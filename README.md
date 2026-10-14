@@ -16,10 +16,14 @@
 
 Реализация
 
-C код
+C код (mainc.c)
 Функция sum_array(int N, int M, int arr[N][M]) использует два вложенных цикла для обхода массива.
 
-Ассемблер RISC-V
+Ассемблер кода (main.s)
 Передача аргументов через регистры a0 (N), a1 (M), a2 (указатель на массив)
 Возврат: Результат в регистре a0
 Регистры s0, s1, s2 сохраняются на стеке
+
+Компиляция
+riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 main.c -o main.elf
+riscv64-unknown-elf-objdump -D main.elf > main.dump
